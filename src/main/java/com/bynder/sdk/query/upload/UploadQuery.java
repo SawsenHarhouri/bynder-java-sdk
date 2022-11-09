@@ -56,6 +56,11 @@ public class UploadQuery {
     public String getFilepath() {
         return filepath;
     }
+    
+     public UploadQuery setFilepath(final String filePath) {
+        this.filepath = filePath;
+        return this;
+    }
 
     public String getFilename() {
         return Paths.get(filepath).getFileName().toString();
